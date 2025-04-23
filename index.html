@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sasa Widya</title>
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+  --bg: linear-gradient(135deg, #fef6ff, #f3e8ff);
+  --accent: #d8b4fe;
+  --accent-dark: #b983ff;
+  --text: #2b2b2b;
+  --muted: #7a7a7a;
+  --white: rgba(255, 255, 255, 0.6);
+  --glass: rgba(255, 255, 255, 0.3);
+  --blur: blur(15px);
+}
+
+body {
+  margin: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  backdrop-filter: blur(3px);
+  -webkit-font-smoothing: antialiased;
+  transition: all 0.3s ease-in-out;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+header {
+  text-align: center;
+  animation: fadeIn 1.2s ease;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 20px;
+  box-shadow: 0 8px 25px rgba(185, 131, 255, 0.3);
+  transition: transform 0.3s ease;
+}
+.profile-pic:hover {
+  transform: scale(1.05);
+}
+
+h1 {
+  font-size: 34px;
+  color: var(--accent-dark);
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: var(--muted);
+  margin-bottom: 30px;
+  letter-spacing: 0.5px;
+}
+
+.bio {
+  text-align: center;
+  font-size: 15px;
+  color: var(--text);
+  max-width: 680px;
+  margin: 0 auto 50px;
+  line-height: 1.7;
+}
+
+.section {
+  text-align: center;
+  margin-bottom: 50px;
+  animation: fadeUp 1.2s ease;
+}
+
+.section h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: var(--accent-dark);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: var(--glass);
+  backdrop-filter: var(--blur);
+  border-radius: 20px;
+  width: 270px;
+  padding: 24px;
+  box-shadow: 0 15px 35px rgba(185, 131, 255, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(185, 131, 255, 0.25);
+}
+
+.card i {
+  font-size: 28px;
+  color: var(--accent-dark);
+  margin-bottom: 12px;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+}
+
+.card p {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.cta a {
+  background: linear-gradient(to right, #d8b4fe, #c084fc);
+  color: white;
+  text-decoration: none;
+  padding: 12px 22px;
+  border-radius: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 8px 20px rgba(185, 131, 255, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.cta a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(185, 131, 255, 0.3);
+}
+
+footer {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 13px;
+  color: #999;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 26px;
+  }
+  .card {
+    width: 100%;
+  }
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <img src="474002929_1104229278069090_2478087069427432344_n.jpg" alt="Sasa Widya" class="profile-pic">
+      <h1>Sasa Widya</h1>
+      <p class="subtitle">Youth Activist • Speaker • Edu & Beauty Creator</p>
+    </header>
+
+    <div class="bio">
+      <p>Aku percaya bahwa edukasi bisa jadi pengalaman yang menyentuh, dan beauty bisa jadi bentuk ekspresi sadar diri. Lewat suara, tulisan, dan video—aku ingin hadir sebagai teman tumbuh dan belajar.</p>
+    </div>
+
+    <section class="section">
+      <h2>Apa yang Aku Lakukan?</h2>
+      <div class="cards">
+        <div class="card">
+          <i class="fa-solid fa-microphone"></i>
+          <h3>Public Speaking</h3>
+          <p>Moderator, speaker & host untuk topik edukasi, youth empowerment, dan wellness.</p>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-chalkboard-user"></i>
+          <h3>EduExperience</h3>
+          <p>Membuat konten edukatif yang engaging dan reflektif—untuk sekolah, komunitas & brand.</p>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-wand-magic-sparkles"></i>
+          <h3>Beauty & Lifestyle</h3>
+          <p>Mengulas dan berbagi soal self-care, skincare, hingga tips tampil percaya diri.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Connect with Me 💌</h2>
+      <div class="cta">
+        <a href="mailto:halo@sasawidya.com"><i class="fa-regular fa-envelope"></i> Email</a>
+        <a href="https://instagram.com/sasawidya" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="https://youtube.com/@sasawidya" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+        <a href="https://sasawidya.com/classes" target="_blank"><i class="fa-solid fa-book-open-reader"></i> Katalog Kelas</a>
+      </div>
+    </section>
+
+    <footer>
+      © 2025 Sasa Widya. Made with purpose & passion 🌸
+    </footer>
+  </div>
+
+</body>
+</html>
